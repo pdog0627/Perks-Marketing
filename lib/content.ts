@@ -21,7 +21,8 @@ export const content = {
 
   // Hero
   hero: {
-    headline: "Employee engagement & perks that actually matter.",
+    headline:
+      "Employee engagement & perks that actually matter.Impact-Site-Verification: e3f125e8-2b9a-49fc-bf2c-2ff57578247a",
     subheadline:
       "Free, branded for your company, with smart HR workflows and curated discounts.",
     primaryCta: "Get started free",
@@ -111,7 +112,8 @@ export const content = {
     {
       icon: "bell" as IconName,
       title: "Team milestones",
-      description: "Celebrate work anniversaries, project completions, and achievements",
+      description:
+        "Celebrate work anniversaries, project completions, and achievements",
     },
   ],
 
@@ -155,7 +157,13 @@ export const content = {
 
   // Social Proof
   socialProof: {
-    companies: ["Early Access", "Beta Partners", "Coming Soon", "Join the Waitlist", "Be First"],
+    companies: [
+      "Early Access",
+      "Beta Partners",
+      "Coming Soon",
+      "Join the Waitlist",
+      "Be First",
+    ],
     testimonials: [
       {
         quote:
