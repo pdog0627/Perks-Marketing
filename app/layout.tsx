@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   other: {
     // 👇 Paste the exact name + token Impact gave you
-    "Impact-Site-Verification: 021d1992-d8b1-4a1c-8c43-73ec8bf1c6ad",
+    "Impact-Site-Verification: 021d1992-d8b1-4a1c-8c43-73ec8bf1c6ad"
   },
 };
 
