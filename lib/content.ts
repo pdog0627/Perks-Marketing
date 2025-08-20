@@ -21,8 +21,7 @@ export const content = {
 
   // Hero
   hero: {
-    headline:
-      "Employee engagement & perks that actually matter.Impact-Site-Verification: e3f125e8-2b9a-49fc-bf2c-2ff57578247a",
+    headline: "Employee engagement & perks that actually matter.",
     subheadline:
       "Free, branded for your company, with smart HR workflows and curated discounts.",
     primaryCta: "Get started free",
