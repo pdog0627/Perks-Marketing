@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { Button } from '@/components/Button'
-import { Section } from '@/components/Section'
-import { Card } from '@/components/Card'
-import { Icon } from '@/components/Icon'
-import { MockDashboard } from '@/components/MockDashboard'
-import { LogoRow } from '@/components/LogoRow'
-import { Testimonial } from '@/components/Testimonial'
-import { content } from '@/lib/content'
+import Image from "next/image";
+import { Button } from "@/components/Button";
+import { Section } from "@/components/Section";
+import { Card } from "@/components/Card";
+import { Icon } from "@/components/Icon";
+import { LogoRow } from "@/components/LogoRow";
+import { Testimonial } from "@/components/Testimonial";
+import { content } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -15,11 +15,18 @@ export default function Home() {
       {/* Header/Nav */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="container mx-auto px-4 md:px-6">
-          <nav className="flex items-center justify-between h-16" aria-label="Main navigation">
-            <div className="text-xl font-bold text-gray-900">
-              {content.appName}
-            </div>
-            
+          <nav
+            className="flex items-center justify-between h-16"
+            aria-label="Main navigation"
+          >
+            <Image
+              src="/images/TeamJoyLogo.png"
+              alt="TeamJoy Logo"
+              width={150}
+              height={70}
+              priority
+            />
+
             <div className="hidden md:flex items-center space-x-8">
               {content.nav.links.map((link, index) => (
                 <a
@@ -31,8 +38,14 @@ export default function Home() {
                 </a>
               ))}
             </div>
-            
-            <Button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+
+            <Button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Get started free
             </Button>
           </nav>
@@ -50,16 +63,38 @@ export default function Home() {
               {content.hero.subheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button
+                size="lg"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 {content.hero.primaryCta}
               </Button>
-              <Button variant="secondary" size="lg" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={() =>
+                  document
+                    .getElementById("how-it-works")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 {content.hero.secondaryCta}
               </Button>
             </div>
           </div>
           <div className="flex justify-center">
-            <MockDashboard />
+            <Image
+              src="/images/Circle Monogram Logo .png"
+              alt="Happy employees thanking each other"
+              width={700}
+              height={700}
+              className="rounded-2xl"
+              priority
+            />
           </div>
         </div>
       </Section>
@@ -75,17 +110,15 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {prop.title}
               </h3>
-              <p className="text-gray-600">
-                {prop.description}
-              </p>
+              <p className="text-gray-600">{prop.description}</p>
             </Card>
           ))}
         </div>
       </Section>
 
       {/* How It Works */}
-      <Section 
-        id="how-it-works" 
+      <Section
+        id="how-it-works"
         title={content.howItWorks.title}
         className="bg-gray-50"
       >
@@ -93,14 +126,14 @@ export default function Home() {
           {content.howItWorks.steps.map((step, index) => (
             <div key={index} className="text-center">
               <div className="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white font-bold text-xl">{index + 1}</span>
+                <span className="text-white font-bold text-xl">
+                  {index + 1}
+                </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 {step.title}
               </h3>
-              <p className="text-gray-600">
-                {step.description}
-              </p>
+              <p className="text-gray-600">{step.description}</p>
             </div>
           ))}
         </div>
@@ -117,9 +150,7 @@ export default function Home() {
               <h3 className="font-semibold text-gray-900 mb-2">
                 {useCase.title}
               </h3>
-              <p className="text-sm text-gray-600">
-                {useCase.description}
-              </p>
+              <p className="text-sm text-gray-600">{useCase.description}</p>
             </Card>
           ))}
         </div>
@@ -150,7 +181,11 @@ export default function Home() {
             <div className="w-full max-w-md h-80 bg-white rounded-2xl border border-gray-200 shadow-lg p-6">
               <div className="h-full bg-gradient-to-br from-brand/5 to-brand/10 rounded-xl flex items-center justify-center">
                 <div className="text-center">
-                  <Icon name="chart" size={48} className="text-brand mx-auto mb-4" />
+                  <Icon
+                    name="chart"
+                    size={48}
+                    className="text-brand mx-auto mb-4"
+                  />
                   <p className="text-gray-600">HR Dashboard Preview</p>
                 </div>
               </div>
@@ -217,14 +252,21 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <Button variant="secondary" size="lg" className="bg-white text-brand hover:bg-gray-100">
+          <Button
+            variant="secondary"
+            size="lg"
+            className="bg-white text-brand hover:bg-gray-100"
+          >
             {content.vendors.cta}
           </Button>
         </div>
       </Section>
 
       {/* Social Proof */}
-      <Section title="Built with feedback from forward-thinking HR teams" className="bg-white">
+      <Section
+        title="Built with feedback from forward-thinking HR teams"
+        className="bg-white"
+      >
         <div className="mb-16">
           <LogoRow companies={content.socialProof.companies} />
         </div>
@@ -241,16 +283,14 @@ export default function Home() {
       </Section>
 
       {/* Final CTA */}
-      <Section 
+      <Section
         id="contact"
         title={content.finalCta.title}
         subtitle={content.finalCta.subtitle}
         className="bg-gray-50"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg">
-            {content.finalCta.primaryCta}
-          </Button>
+          <Button size="lg">{content.finalCta.primaryCta}</Button>
           <Button variant="secondary" size="lg">
             {content.finalCta.secondaryCta}
           </Button>
@@ -277,12 +317,10 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-sm text-gray-400">
-              {content.footer.disclosure}
-            </p>
+            <p className="text-sm text-gray-400">{content.footer.disclosure}</p>
           </div>
         </div>
       </footer>
     </main>
-  )
+  );
 }

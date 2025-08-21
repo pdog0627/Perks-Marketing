@@ -3,9 +3,9 @@ type IconName = "bell" | "cake" | "truck" | "heart" | "cart" | "chart";
 export const content = {
   // Brand
   appName: "TeamJoy",
-  tagline: "Employee engagement & perks that actually matter.",
+  tagline: "The Culture Budgeting Platform for Leaders.",
   subtagline:
-    "Free, branded for your company, with smart HR workflows and curated discounts.",
+    "Our manager-only platform empowers you to build intentional culture with a budget you can control.",
 
   // Navigation
   nav: {
@@ -21,9 +21,9 @@ export const content = {
 
   // Hero
   hero: {
-    headline: "Employee engagement & perks that actually matter.",
+    headline: "The Culture Budgeting Platform for Leaders.",
     subheadline:
-      "Free, branded for your company, with smart HR workflows and curated discounts.",
+      "A free, manager-only platform that empowers you to build intentional culture with a budget you can control.",
     primaryCta: "Get started free",
     secondaryCta: "See how it works",
   },
@@ -31,28 +31,28 @@ export const content = {
   // Value Props
   valueProps: [
     {
-      icon: "bell" as IconName,
-      title: "Smart Reminders",
+      icon: "heart" as IconName,
+      title: "Culture Budgeting & ROI",
       description:
-        "Never miss birthdays, anniversaries, or team events with automated workflows.",
+        "Move beyond guesswork. Our platform enables leaders to intentionally plan and track the ROI of every culture-building initiative.",
     },
     {
-      icon: "heart" as IconName,
-      title: "Free for Companies",
+      icon: "bell" as IconName,
+      title: "Smart, Time-Saving Workflows",
       description:
-        "Vendor-funded platform means zero cost for your organization.",
+        "Automate culture with ease. Our system handles everything from personalized birthday reminders to team event logistics, so you can focus on leading.",
     },
     {
       icon: "truck" as IconName,
-      title: "Easy Access",
+      title: "Branded for Your Company",
       description:
-        "Works via app, Slack, email links. No forced logins or app downloads.",
+        "Make it truly your own. The platform is fully brandable with your company's logo, turning it into a seamless extension of your internal culture.",
     },
     {
       icon: "chart" as IconName,
-      title: "Time-Saving Templates",
+      title: "Exclusive Corporate Partnerships",
       description:
-        "Pre-built flows for common HR tasks and employee engagement.",
+        "Offer perks that actually matter. Our team is actively building strategic corporate partnerships that provide exclusive, high-value discounts for your team.",
     },
   ],
 
@@ -62,21 +62,21 @@ export const content = {
     steps: [
       {
         icon: "chart" as IconName,
-        title: "HR creates & shares",
+        title: "Set Your Culture Budget",
         description:
-          "Set up automated workflows for birthdays, events, and perks in minutes.",
-      },
-      {
-        icon: "heart" as IconName,
-        title: "Employees engage",
-        description:
-          "Teams participate via simple links - no downloads or complex signups required.",
+          "Decide how much you want to spend on culture. HR and team leaders can set budgets and kick things off with ready-to-go workflows and templates.",
       },
       {
         icon: "truck" as IconName,
-        title: "Vendors deliver",
+        title: "Let the Platform Do the Work",
         description:
-          "Curated partners fulfill orders and experiences seamlessly.",
+          "Your branded platform runs everything in the background — no employee logins, no extra apps, just seamless execution for managers.",
+      },
+      {
+        icon: "heart" as IconName,
+        title: "See the Results",
+        description:
+          "Easily track where the money goes and measure the impact of every initiative, so you can show real proof of culture ROI.",
       },
     ],
   },
